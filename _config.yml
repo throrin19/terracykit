@@ -1,21 +1,58 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
+# name of the software
+name: Terracy Bootstrap
+# current version of the software
+version: 0.0.1
+# url of the download button
+downloadUrl: https://github.com/throrin19/terracykit
+# licence of the software
+license: Apache License 2.0
+licenseUrl: http://opensource.org/licenses/Apache-2.0
 
-# Site settings
-title: Your awesome title
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+# list of additional links on the right of the top menu
+headerLinks:
+  - title: Terracy Bootstrap
+    url: https://github.com/throrin19/terracykit
 
-# Build settings
-markdown: kramdown
+# list if additional links on the footer
+footerLinks:
+  - title: GitHub
+    url: https://github.com/throrin19/terracykit
+  - title: Issues
+    url: https://github.com/throrin19/terracykit/issues?state=open
+
+# header
+header:
+  color1: "#080331"
+  color2: "#673051"
+  trianglify: true
+
+# google analytics
+analytics:
+  account:
+  domain:
+
+# github buttons
+githubButton:
+  user: throrin19
+  repo: terracykit
+
+# twitter buttons
+twitter:
+  enabled: true
+  via:
+  hash:
+  account:
+
+# facebook buttons
+facebook:
+  enabled: true
+  profileUrl:
+
+
+exclude: ['README.md', 'LICENSE', 'bower.json', 'Gemfile.lock', 'Gemfile']
+
+gems:
+  - jekyll-mentions
+  - jemoji
+  - jekyll-redirect-from
+  - jekyll-sitemap
