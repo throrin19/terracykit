@@ -30,3 +30,10 @@
   width:30%;
   background:linear-gradient(135deg, transparent 50px, white 50px);
 }
+
+.component-example, .demo-app {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 0;
+}
