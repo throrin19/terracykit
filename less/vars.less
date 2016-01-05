@@ -1,38 +1,53 @@
 // colors
 @white  : #ffffff;
 @green  : #7BB91B;
-@blue   : #29A964;
+@teal   : #29A964;
 @yellow : #F29E00;
 @red    : #DD3002;
 @black  : #2D2F31;
 @grey   : #F6F6F6;
 
-@colors : 'white', 'green', 'yellow', 'red', 'black', 'grey';
+@colors : 'white', 'green', 'teal', 'yellow', 'red', 'black', 'grey';
 
-@white-hover    : saturate(@white, 10%);
-@white-focus    : desaturate(@white, 10%);
-@white-disable  : lightness(desaturate(@white, 100%), 30%);
-@green-hover    : saturate(@green, 10%);
+@white-hover    : #fbfbfb;
+@white-focus    : #f6f6f6;
+@white-disable  : lighten(desaturate(@white, 100%), 30%);
+@green-hover    : saturate(@green, 20%);
 @green-focus    : desaturate(@green, 10%);
-@green-disable  : lightness(desaturate(@green, 100%), 30%);
-@blue-hover     : saturate(@blue, 10%);
-@blue-focus     : desaturate(@blue, 10%);
-@blue-disable   : lightness(desaturate(@blue, 100%), 30%);
-@yellow-hover   : saturate(@yellow, 10%);
+@green-disable  : lighten(desaturate(@green, 100%), 30%);
+@teal-hover     : saturate(@teal, 20%);
+@teal-focus     : desaturate(@teal, 10%);
+@teal-disable   : lighten(desaturate(@teal, 100%), 30%);
+@yellow-hover   : saturate(@yellow, 20%);
 @yellow-focus   : desaturate(@yellow, 10%);
-@yellow-disable : lightness(desaturate(@yellow, 100%), 30%);
-@red-hover      : saturate(@red, 10%);
+@yellow-disable : lighten(desaturate(@yellow, 100%), 30%);
+@red-hover      : saturate(@red, 20%);
 @red-focus      : desaturate(@red, 10%);
-@red-disable    : lightness(desaturate(@red, 100%), 30%);
-@black-hover    : saturate(@black, 10%);
+@red-disable    : lighten(desaturate(@red, 100%), 30%);
+@black-hover    : saturate(@black, 20%);
 @black-focus    : desaturate(@black, 10%);
-@black-disable  : lightness(desaturate(@black, 100%), 30%);
-@grey-hover     : saturate(@grey, 10%);
+@black-disable  : lighten(desaturate(@black, 100%), 30%);
+@grey-hover     : saturate(@grey, 20%);
 @grey-focus     : desaturate(@grey, 10%);
-@grey-disable   : lightness(desaturate(@grey, 100%), 30%);
+@grey-disable   : lighten(desaturate(@grey, 100%), 30%);
 
 
-@font-famully-default : 'Roboto', sans-serif;
+@font-famully-default : sans-serif;
 @font-size-default    : 14px;
 @line-heght-default   : 20px;
 @font-color-default   : @black;
+
+@border-default : #cfcfcf;
+@border-white   : @border-default;
+@border-green   : @green-focus;
+@border-teal    : @teal-focus;
+@border-yellow  : @yellow-focus;
+@border-red     : @red-focus;
+@border-black   : #3d4144;
+@border-grey    : @border-default;
+
+@btn-small-txt : 12px;
+@btn-small-padding : 5px 12px;
+@btn-normal-txt : 14px;
+@btn-normal-padding : 8px 20px;
+@btn-big-txt : 16px;

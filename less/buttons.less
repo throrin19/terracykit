@@ -1,0 +1,70 @@
+.btn {
+  .border-radius(2px);
+  .box-shadow(0 0 2px @border-default);
+  .user-select(none);
+
+  display: inline-block;
+  margin-bottom: 0; // For input.btn
+  text-decoration: none;
+  text-align: center;
+  touch-action: manipulation;
+  font-family: @font-famully-default;
+  color: @font-color-default;
+  padding: @btn-normal-padding;
+  font-size: @btn-normal-txt;
+  background-color: @white;
+  text-transform: capitalize;
+  border: 1px solid @border-default;
+  font-weight: 800;
+  cursor: pointer;
+  outline: none;
+
+  &:hover {
+    background-color: @white-hover;
+  }
+  &:active {
+    background-color: @white-focus;
+  }
+  &[disabled],.disabled {
+    cursor: not-allowed;
+    filter: alpha(opacity=65);
+    .box-shadow(none);
+    opacity: .65;
+    background-color: @white-disable;
+    border-color: @border-default;
+    &:hover {
+      background-color: @white;
+    }
+  }
+
+  .buttons-colors(@index, @colors) when (@index > 0) {
+    .buttons-colors(@index - 1, @colors);
+    @color : e(extract(@colors, @index));
+    &.btn-@{color} {
+      @border : "border-@{color}";
+      @focus  : "@{color}-focus";
+      @hover  : "@{color}-hover";
+      @disable : "@{color}-disable";
+
+
+      background-color: @@color;
+      border-color: @@border;
+      color: contrast(@@color, @white, @black, 80%);
+
+      &:hover {
+        background-color: @@hover;
+      }
+      &:active {
+        background-color: @@focus;
+      }
+      &[disabled],.disabled {
+        background-color: @@disable;
+        border-color: @border-default;
+        &:hover {
+          background-color: @@disable;
+        }
+      }
+    }
+  }
+  .buttons-colors(length(@colors), @colors);
+}
