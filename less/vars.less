@@ -1,7 +1,7 @@
 // colors
 @white  : #ffffff;
-@green  : #7BB91B;
-@teal   : #29A964;
+@green  : #699f39;
+@teal   : #1b8958;
 @yellow : #F29E00;
 @red    : #DD3002;
 @black  : #2D2F31;
@@ -11,25 +11,31 @@
 
 @white-hover    : #fbfbfb;
 @white-focus    : #f6f6f6;
-@white-disable  : lighten(desaturate(@white, 100%), 30%);
-@green-hover    : saturate(@green, 20%);
-@green-focus    : desaturate(@green, 10%);
-@green-disable  : lighten(desaturate(@green, 100%), 30%);
-@teal-hover     : saturate(@teal, 20%);
-@teal-focus     : desaturate(@teal, 10%);
-@teal-disable   : lighten(desaturate(@teal, 100%), 30%);
-@yellow-hover   : saturate(@yellow, 20%);
-@yellow-focus   : desaturate(@yellow, 10%);
-@yellow-disable : lighten(desaturate(@yellow, 100%), 30%);
-@red-hover      : saturate(@red, 20%);
-@red-focus      : desaturate(@red, 10%);
-@red-disable    : lighten(desaturate(@red, 100%), 30%);
-@black-hover    : saturate(@black, 20%);
-@black-focus    : desaturate(@black, 10%);
-@black-disable  : lighten(desaturate(@black, 100%), 30%);
-@grey-hover     : saturate(@grey, 20%);
-@grey-focus     : desaturate(@grey, 10%);
-@grey-disable   : lighten(desaturate(@grey, 100%), 30%);
+@white-border   : darken(@white, 10%);
+
+@green-hover    : lighten(desaturate(@green, 10%), 10%);
+@green-focus    : darken(@green, 10%);
+@green-border   : darken(@green, 10%);
+
+@teal-hover     : lighten(desaturate(@teal, 10%), 10%);
+@teal-focus     : darken(@teal, 10%);
+@teal-border    : darken(@teal, 10%);
+
+@yellow-hover   : lighten(desaturate(@yellow, 10%), 10%);
+@yellow-focus   : darken(@yellow, 10%);
+@yellow-border  : darken(@yellow, 10%);
+
+@red-hover      : lighten(desaturate(@red, 10%), 10%);
+@red-focus      : darken(@red, 10%);
+@red-border     : darken(@red, 10%);
+
+@black-hover    : lighten(desaturate(@black, 10%), 10%);
+@black-focus    : darken(@black, 10%);
+@black-border   : darken(@black, 10%);
+
+@grey-hover     : lighten(desaturate(@grey, 10%), 10%);
+@grey-focus     : darken(@grey, 10%);
+@grey-border    : darken(@grey, 10%);
 
 
 @font-famully-default : sans-serif;
@@ -37,14 +43,8 @@
 @line-heght-default   : 20px;
 @font-color-default   : @black;
 
+@disable        : lighten(desaturate(@white, 100%), 30%);
 @border-default : #cfcfcf;
-@border-white   : @border-default;
-@border-green   : @green-focus;
-@border-teal    : @teal-focus;
-@border-yellow  : @yellow-focus;
-@border-red     : @red-focus;
-@border-black   : #3d4144;
-@border-grey    : @border-default;
 
 @btn-small-txt : 12px;
 @btn-small-padding : 5px 12px;

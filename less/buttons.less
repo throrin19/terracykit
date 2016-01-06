@@ -25,23 +25,13 @@
   &:active {
     background-color: @white-focus;
   }
-  &[disabled],.disabled {
-    cursor: not-allowed;
-    filter: alpha(opacity=65);
-    .box-shadow(none);
-    opacity: .65;
-    background-color: @white-disable;
-    border-color: @border-default;
-    &:hover {
-      background-color: @white;
-    }
-  }
 
+  // colors
   .buttons-colors(@index, @colors) when (@index > 0) {
     .buttons-colors(@index - 1, @colors);
     @color : e(extract(@colors, @index));
     &.btn-@{color} {
-      @border : "border-@{color}";
+      @border : "@{color}-border";
       @focus  : "@{color}-focus";
       @hover  : "@{color}-hover";
       @disable : "@{color}-disable";
@@ -57,14 +47,22 @@
       &:active {
         background-color: @@focus;
       }
-      &[disabled],.disabled {
-        background-color: @@disable;
-        border-color: @border-default;
-        &:hover {
-          background-color: @@disable;
-        }
-      }
     }
   }
   .buttons-colors(length(@colors), @colors);
+
+
+
+
+  &[disabled],.disabled {
+    cursor: not-allowed;
+    filter: alpha(opacity=65);
+    .box-shadow(none);
+    opacity: .65;
+    background-color: @disable;
+    border-color: @border-default;
+    &:hover {
+      background-color: @white;
+    }
+  }
 }
