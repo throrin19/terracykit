@@ -1690,3 +1690,88 @@ body {
 .btn.disabled:hover {
   background-color: #aaa;
 }
+.label {
+  display: inline-block;
+  -webkit-border-radius: 2px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 2px;
+  -moz-background-clip: padding;
+  border-radius: 2px;
+  background-clip: padding-box;
+  background-color: #ffffff;
+  border: 1px solid #cfcfcf;
+  color: #cfcfcf;
+  padding: .2em .6em .3em;
+  font-size: 75%;
+  line-height: 1;
+}
+.label.label-white {
+  background-color: #ffffff;
+  border-color: #e6e6e6;
+  color: #2D2F31;
+}
+.label.label-white.label-outline {
+  background-color: #ffffff;
+  border-color: #e6e6e6;
+  color: #b6b6b6;
+}
+.label.label-green {
+  background-color: #699f39;
+  border-color: #50792c;
+  color: #ffffff;
+}
+.label.label-green.label-outline {
+  background-color: #ffffff;
+  border-color: #50792c;
+  color: #b6b6b6;
+}
+.label.label-teal {
+  background-color: #1b8958;
+  border-color: #135e3d;
+  color: #ffffff;
+}
+.label.label-teal.label-outline {
+  background-color: #ffffff;
+  border-color: #135e3d;
+  color: #b6b6b6;
+}
+.label.label-yellow {
+  background-color: #F29E00;
+  border-color: #bf7d00;
+  color: #ffffff;
+}
+.label.label-yellow.label-outline {
+  background-color: #ffffff;
+  border-color: #bf7d00;
+  color: #b6b6b6;
+}
+.label.label-red {
+  background-color: #DD3002;
+  border-color: #aa2502;
+  color: #ffffff;
+}
+.label.label-red.label-outline {
+  background-color: #ffffff;
+  border-color: #aa2502;
+  color: #b6b6b6;
+}
+.label.label-black {
+  background-color: #2D2F31;
+  border-color: #151616;
+  color: #ffffff;
+}
+.label.label-black.label-outline {
+  background-color: #ffffff;
+  border-color: #151616;
+  color: #b6b6b6;
+}
+.label.label-grey {
+  background-color: #F6F6F6;
+  border-color: #dddddd;
+  color: #2D2F31;
+}
+.label.label-grey.label-outline {
+  background-color: #ffffff;
+  border-color: #dddddd;
+  color: #b6b6b6;
+}
