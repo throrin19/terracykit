@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'teracy';
-    src:    url('../../dist/icons/teracy.eot?8yuwk8');
-    src:    url('../../dist/icons/teracy.eot?8yuwk8#iefix') format('embedded-opentype'),
-    url('../../dist/icons/teracy.ttf?8yuwk8') format('truetype'),
-    url('../../dist/icons/teracy.woff?8yuwk8') format('woff'),
-    url('../../dist/icons/teracy.svg?8yuwk8#teracy') format('svg');
+    src:    url('../../dist/icons/terracy.eot?8yuwk8');
+    src:    url('../../dist/icons/terracy.eot?8yuwk8#iefix') format('embedded-opentype'),
+    url('../../dist/icons/terracy.ttf?8yuwk8') format('truetype'),
+    url('../../dist/icons/terracy.woff?8yuwk8') format('woff'),
+    url('../../dist/icons/terracy.svg?8yuwk8#teracy') format('svg');
     font-weight: normal;
     font-style: normal;
 }

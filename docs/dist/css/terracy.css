@@ -414,8 +414,8 @@ body {
 }
 @font-face {
   font-family: 'terracy';
-  src: url('../icons/teracy.eot?8yuwk8');
-  src: url('../icons/teracy.eot?8yuwk8#iefix') format('embedded-opentype'), url('../icons/teracy.ttf?8yuwk8') format('truetype'), url('../icons/teracy.woff?8yuwk8') format('woff'), url('../icons/teracy.svg?8yuwk8#teracy') format('svg');
+  src: url('../icons/terracy.eot?8yuwk8');
+  src: url('../icons/terracy.eot?8yuwk8#iefix') format('embedded-opentype'), url('../icons/terracy.ttf?8yuwk8') format('truetype'), url('../icons/terracy.woff?8yuwk8') format('woff'), url('../icons/terracy.svg?8yuwk8#teracy') format('svg');
   font-weight: normal;
   font-style: normal;
 }
