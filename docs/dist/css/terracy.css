@@ -535,19 +535,23 @@ body {
 }
 .btn.btn-block {
   display: block;
+  width: 100%;
+}
+.btn.btn-block + .btn-block {
+  margin-top: 5px;
 }
 .btn[disabled],
-.btn .disabled {
+.btn.disabled {
   cursor: not-allowed;
   filter: alpha(opacity=65);
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
   opacity: .65;
-  background-color: #ffffff;
+  background-color: #aaaaaa;
   border-color: #cfcfcf;
 }
 .btn[disabled]:hover,
-.btn .disabled:hover {
-  background-color: #ffffff;
+.btn.disabled:hover {
+  background-color: #aaaaaa;
 }
