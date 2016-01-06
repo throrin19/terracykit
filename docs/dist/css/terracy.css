@@ -1577,22 +1577,6 @@ body {
   content: "\e5c5";
   padding-left: 6px;
 }
-.btn.btn-dropdown-split {
-  position: relative;
-  padding-right: 45px;
-}
-.btn.btn-dropdown-split::after {
-  font-family: 'terracy';
-  content: "\e5c5";
-  position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: 25px;
-  border-left: 1px solid #cfcfcf;
-  line-height: 34px;
-  text-align: center;
-}
 .btn.btn-white {
   background-color: #ffffff;
   border-color: #e6e6e6;
@@ -1674,15 +1658,15 @@ body {
   font-size: 12px;
   padding: 6px 15px;
 }
-.btn.btn-small.dropdown {
-  padding-right: 12px;
+.btn.btn-small.btn-dropdown {
+  padding-right: 10px;
 }
 .btn.btn-large {
   font-size: 18px;
   padding: 10px 20px;
 }
-.btn.btn-large.dropdown {
-  padding-right: 15px;
+.btn.btn-large.btn-dropdown {
+  padding-right: 10px;
 }
 .btn.btn-block {
   display: block;

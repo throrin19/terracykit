@@ -35,22 +35,22 @@
       padding-left: 6px;
     }
   }
-  &.btn-dropdown-split {
-    position: relative;
-    padding-right: @btn-normal-split + @btn-normal-padding-horriz;
-    &::after {
-      font-family: 'terracy';
-      content: @ticon-drop-down;
-      position: absolute;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      width: @btn-normal-split;
-      border-left : 1px solid @border-default;
-      line-height: 34px;
-      text-align: center;
-    }
-  }
+  //&.btn-dropdown-split {
+  //  position: relative;
+  //  padding-right: @btn-normal-split + @btn-normal-padding-horriz;
+  //  &::after {
+  //    font-family: 'terracy';
+  //    content: @ticon-drop-down;
+  //    position: absolute;
+  //    right: 0;
+  //    top: 0;
+  //    bottom: 0;
+  //    width: @btn-normal-split;
+  //    border-left : 1px solid @border-default;
+  //    line-height: @btn-normal-line-height;
+  //    text-align: center;
+  //  }
+  //}
 
   // colors
   .buttons-colors(@index, @colors) when (@index > 0) {
@@ -81,16 +81,30 @@
   &.btn-small {
     font-size: @btn-small-txt;
     padding: @btn-small-padding-vert @btn-small-padding-horriz;
-    &.dropdown {
-      padding-right: @btn-small-padding-horriz - 3px;
+    &.btn-dropdown {
+      padding-right: @btn-small-padding-horriz - 5px;
     }
+    //&.btn-dropdown-split {
+    //  padding-right: @btn-small-split + @btn-small-padding-horriz;
+    //  &::after {
+    //    width: @btn-small-split;
+    //    line-height: @btn-small-line-height;
+    //  }
+    //}
   }
   &.btn-large {
     font-size: @btn-large-txt;
     padding: @btn-large-padding-vert @btn-large-padding-horriz;
-    &.dropdown {
-      padding-right: @btn-large-padding-horriz - 5px;
+    &.btn-dropdown {
+      padding-right: @btn-large-padding-horriz - 10px;
     }
+    //&.btn-dropdown-split {
+    //  padding-right: @btn-large-split + @btn-large-padding-horriz;
+    //  &::after {
+    //    width: @btn-large-split;
+    //    line-height: @btn-large-line-height;
+    //  }
+    //}
   }
 
   &.btn-block {
