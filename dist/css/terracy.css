@@ -525,6 +525,14 @@ body {
 .btn.btn-grey:active {
   background-color: #dddddd;
 }
+.btn.btn-small {
+  font-size: 12px;
+  padding: 6px 15px;
+}
+.btn.btn-large {
+  font-size: 18px;
+  padding: 10px 25px;
+}
 .btn[disabled],
 .btn .disabled {
   cursor: not-allowed;
