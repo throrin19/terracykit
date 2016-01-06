@@ -51,7 +51,15 @@
   }
   .buttons-colors(length(@colors), @colors);
 
-
+  // size
+  &.btn-small {
+    font-size: @btn-small-txt;
+    padding: @btn-small-padding;
+  }
+  &.btn-large {
+    font-size: @btn-large-txt;
+    padding: @btn-large-padding;
+  }
 
 
   &[disabled],.disabled {
