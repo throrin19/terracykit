@@ -10,7 +10,7 @@
   touch-action: manipulation;
   font-family: @font-famully-default;
   color: @font-color-default;
-  padding: @btn-normal-padding;
+  padding: @btn-normal-padding-vert @btn-normal-padding-horriz;
   font-size: @btn-normal-txt;
   background-color: @white;
   text-transform: capitalize;
@@ -28,10 +28,27 @@
 
   // dropdown
   &.btn-dropdown {
+    padding-right: @btn-normal-padding-horriz - 5px;
     &::after {
       font-family: 'terracy';
       content: @ticon-drop-down;
       padding-left: 6px;
+    }
+  }
+  &.btn-dropdown-split {
+    position: relative;
+    padding-right: @btn-normal-split + @btn-normal-padding-horriz;
+    &::after {
+      font-family: 'terracy';
+      content: @ticon-drop-down;
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: @btn-normal-split;
+      border-left : 1px solid @border-default;
+      line-height: 34px;
+      text-align: center;
     }
   }
 
@@ -63,12 +80,19 @@
   // size
   &.btn-small {
     font-size: @btn-small-txt;
-    padding: @btn-small-padding;
+    padding: @btn-small-padding-vert @btn-small-padding-horriz;
+    &.dropdown {
+      padding-right: @btn-small-padding-horriz - 3px;
+    }
   }
   &.btn-large {
     font-size: @btn-large-txt;
-    padding: @btn-large-padding;
+    padding: @btn-large-padding-vert @btn-large-padding-horriz;
+    &.dropdown {
+      padding-right: @btn-large-padding-horriz - 5px;
+    }
   }
+
   &.btn-block {
     display: block;
     width: 100%;
