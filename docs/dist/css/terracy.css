@@ -533,6 +533,9 @@ body {
   font-size: 18px;
   padding: 10px 25px;
 }
+.btn.btn-block {
+  display: block;
+}
 .btn[disabled],
 .btn .disabled {
   cursor: not-allowed;
