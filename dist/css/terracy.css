@@ -413,7 +413,7 @@ body {
   background-color: transparent;
 }
 @font-face {
-  font-family: 'teracy';
+  font-family: 'terracy';
   src: url('../icons/teracy.eot?8yuwk8');
   src: url('../icons/teracy.eot?8yuwk8#iefix') format('embedded-opentype'), url('../icons/teracy.ttf?8yuwk8') format('truetype'), url('../icons/teracy.woff?8yuwk8') format('woff'), url('../icons/teracy.svg?8yuwk8#teracy') format('svg');
   font-weight: normal;
@@ -422,7 +422,7 @@ body {
 [class^="ticon-"],
 [class*=" ticon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'teracy' !important;
+  font-family: 'terracy' !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -1569,6 +1569,11 @@ body {
 .btn:active {
   background-color: #f6f6f6;
 }
+.btn.btn-dropdown::after {
+  font-family: 'terracy';
+  content: "\e5c5";
+  padding-left: 6px;
+}
 .btn.btn-white {
   background-color: #ffffff;
   border-color: #e6e6e6;
@@ -1652,7 +1657,7 @@ body {
 }
 .btn.btn-large {
   font-size: 18px;
-  padding: 10px 25px;
+  padding: 10px 20px;
 }
 .btn.btn-block {
   display: block;

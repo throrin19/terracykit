@@ -26,6 +26,15 @@
     background-color: @white-focus;
   }
 
+  // dropdown
+  &.btn-dropdown {
+    &::after {
+      font-family: 'terracy';
+      content: @ticon-drop-down;
+      padding-left: 6px;
+    }
+  }
+
   // colors
   .buttons-colors(@index, @colors) when (@index > 0) {
     .buttons-colors(@index - 1, @colors);
