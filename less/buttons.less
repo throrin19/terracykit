@@ -1,6 +1,6 @@
 .btn {
   .border-radius(2px);
-  .box-shadow(0 0 2px @border-default);
+  .box-shadow(0 0 2px @grey-border);
   .user-select(none);
 
   display: inline-block;
@@ -8,13 +8,13 @@
   text-decoration: none;
   text-align: center;
   touch-action: manipulation;
-  font-family: @font-familly-default;
-  color: @font-color-default;
+  font-family: @font-family-base;
+  color: @text-color;
   padding: @btn-normal-padding-vert @btn-normal-padding-horriz;
   font-size: @btn-normal-txt;
   background-color: @white;
   text-transform: capitalize;
-  border: 1px solid @border-default;
+  border: 1px solid @btn-default-border;
   font-weight: 800;
   cursor: pointer;
   outline: none;
@@ -121,10 +121,10 @@
     filter: alpha(opacity=65);
     .box-shadow(none);
     opacity: .65;
-    background-color: @disable;
-    border-color: @border-default;
+    background-color: @gray;
+    border-color: @grey-border;
     &:hover {
-      background-color: @disable;
+      background-color: @gray;
     }
   }
 }
