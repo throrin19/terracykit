@@ -3,34 +3,35 @@
 var gulp        = require('gulp'),
     less        = require('gulp-less'),
     watch       = require('gulp-watch'),
-    watchLess   = require('gulp-watch-less'),
+    rename      = require('gulp-rename'),
     path        = require('path');
 
 
-var lessTask =  function () {
+var lessTask =  function (compress) {
+    var fileName = 'terracy.css';
+    if (compress) {
+        fileName = 'terracy.min.css';
+    }
+
     return gulp.src('./less/terracy.less')
+        //.pipe(watch('less/terracy.less'))
         .pipe(less({
             filename : 'terracy.less',
             paths: [ path.join(__dirname, 'less') ],
-            compress: true
+            compress : compress
         }))
+        .pipe(rename(fileName))
         .pipe(gulp.dest('./dist/css/'))
         .pipe(gulp.dest('./docs/assets/dist/css/'));
 };
 
+gulp.task('less', function () {
+    return lessTask(false);
+});
+gulp.task('less-min', function () {
+    return lessTask(true);
+});
 
-
-//gulp.task('less-doc', function () {
-//    return gulp.src('./less/terracy.less')
-//        .pipe(watchLess('less/terracy.less'))
-//        .pipe(less({
-//            filename : 'terracy.less',
-//            paths: [ path.join(__dirname, 'less') ],
-//            compress: true
-//        }))
-//        .pipe(gulp.dest('./docs/assets/dist/css/'));
-//});
-
-gulp.task('build', function () {
-    return lessTask();
+gulp.task('build', [ 'less', 'less-min' ], function () {
+    gulp.watch('./less/**/*.less', [ 'less', 'less-min' ]);
 });
