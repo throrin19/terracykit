@@ -1,0 +1,36 @@
+{
+  "name": "terracykit",
+  "version": "0.1.0",
+  "description": "Terracy Kit Bootstrap",
+  "main": "",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/throrin19/terracykit.git"
+  },
+  "keywords": [
+    "bootstrap",
+    "ui",
+    "terracy",
+    "kit",
+    "ux",
+    "riot"
+  ],
+  "author": "Benjamin Besse",
+  "license": "Apache-1.0",
+  "bugs": {
+    "url": "https://github.com/throrin19/terracykit/issues"
+  },
+  "homepage": "https://github.com/throrin19/terracykit#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-less": "^3.0.5",
+    "gulp-sourcemap": "^1.0.1",
+    "gulp-watch-less": "^1.0.1"
+  }
+}
