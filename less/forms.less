@@ -115,16 +115,19 @@ output {
   display: block;
   width: 100%;
   height: @input-height-base; // Make inputs at least the height of their button counterpart (base line-height + padding + border)
-  padding: @padding-base-vertical @padding-base-horizontal;
+  padding: @input-padding-vertical @input-padding-horrizontal;
   font-size: @font-size-base;
   line-height: @line-height-base;
   color: @input-color;
   background-color: @input-bg;
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
-  border: 1px solid @input-border;
-  border-radius: @input-border-radius; // Note: This has no effect on <select>s in some browsers, due to the limited stylability of <select>s in CSS.
-  .box-shadow(inset 0 1px 1px rgba(0,0,0,.075));
-  .transition(~"border-color ease-in-out .15s, box-shadow ease-in-out .15s");
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid @input-border;
+  //border-radius: @input-border-radius; // Note: This has no effect on <select>s in some browsers, due to the limited stylability of <select>s in CSS.
+  //.box-shadow(inset 0 1px 1px rgba(0,0,0,.075));
+  .transition(~"border-color ease-in-out .15s");
 
   // Customize the `:focus` state to imitate native WebKit styles.
   .form-control-focus();
@@ -146,7 +149,9 @@ output {
   &[disabled],
   &[readonly],
   fieldset[disabled] & {
-    background-color: @input-bg-disabled;
+    //background-color: @input-bg-disabled;
+    border-color: darken(@gray-lighter, 3%);
+    color: darken(@gray-lighter, 3%);
     opacity: 1; // iOS fix for unreadable disabled content; see https://github.com/twbs/bootstrap/issues/11655
   }
 
@@ -155,9 +160,16 @@ output {
     cursor: @cursor-disabled;
   }
 
-  // Reset height for `textarea`s
+  // Reset height and design for `textarea`s
   textarea& {
+    border: 1px solid @input-border;
+    border-radius: @input-border-radius;
     height: auto;
+  }
+
+  select& {
+    border: 1px solid @input-border;
+    border-radius: @input-border-radius;
   }
 }
 

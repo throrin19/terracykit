@@ -183,14 +183,17 @@
 //##
 
 //** `<input>` background color
-@input-bg:                       #fff;
+@input-bg:                       transparent;
 //** `<input disabled>` background color
-@input-bg-disabled:              @gray-lighter;
+@input-bg-disabled:              transparent;
 
 //** Text color for `<input>`s
 @input-color:                    @gray;
 //** `<input>` border color
-@input-border:                   #ccc;
+@input-border:                   @gray;
+
+@input-padding-vertical:         3px;
+@input-padding-horrizontal:      5px;
 
 // TODO: Rename `@input-border-radius` to `@input-border-radius-base` in v4
 //** Default `.form-control` border radius
