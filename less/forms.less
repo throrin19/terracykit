@@ -339,15 +339,15 @@ input[type="checkbox"] {
 // issue documented in https://github.com/twbs/bootstrap/issues/15074.
 
 .input-sm {
-  .input-size(@input-height-small; @padding-small-vertical; @padding-small-horizontal; @font-size-small; @line-height-small; @input-border-radius-small);
+  .input-size(@input-height-small; @input-padding-vertical; @input-padding-horrizontal; @font-size-small; @line-height-small; @input-border-radius-small);
 }
 .form-group-sm {
   .form-control {
     height: @input-height-small;
-    padding: @padding-small-vertical @padding-small-horizontal;
+    padding: @input-padding-vertical @input-padding-horrizontal;
     font-size: @font-size-small;
     line-height: @line-height-small;
-    border-radius: @input-border-radius-small;
+    //border-radius: @input-border-radius-small;
   }
   select.form-control {
     height: @input-height-small;
@@ -360,22 +360,22 @@ input[type="checkbox"] {
   .form-control-static {
     height: @input-height-small;
     min-height: (@line-height-computed + @font-size-small);
-    padding: (@padding-small-vertical + 1) @padding-small-horizontal;
+    padding: (@input-padding-vertical + 1) @input-padding-horrizontal;
     font-size: @font-size-small;
     line-height: @line-height-small;
   }
 }
 
 .input-lg {
-  .input-size(@input-height-large; @padding-large-vertical; @padding-large-horizontal; @font-size-large; @line-height-large; @input-border-radius-large);
+  .input-size(@input-height-large; @input-padding-vertical; @input-padding-horrizontal; @font-size-large; @line-height-large; @input-border-radius-large);
 }
 .form-group-lg {
   .form-control {
     height: @input-height-large;
-    padding: @padding-large-vertical @padding-large-horizontal;
+    padding: @input-padding-vertical @input-padding-horrizontal;
     font-size: @font-size-large;
     line-height: @line-height-large;
-    border-radius: @input-border-radius-large;
+    //border-radius: @input-border-radius-large;
   }
   select.form-control {
     height: @input-height-large;
@@ -388,7 +388,7 @@ input[type="checkbox"] {
   .form-control-static {
     height: @input-height-large;
     min-height: (@line-height-computed + @font-size-large);
-    padding: (@padding-large-vertical + 1) @padding-large-horizontal;
+    padding: (@input-padding-vertical + 1) @input-padding-horrizontal;
     font-size: @font-size-large;
     line-height: @line-height-large;
   }
@@ -420,6 +420,7 @@ input[type="checkbox"] {
   line-height: @input-height-base;
   text-align: center;
   pointer-events: none;
+  font-size: @form-feedback-default;
 }
 .input-lg + .form-control-feedback,
 .input-group-lg + .form-control-feedback,
@@ -427,6 +428,7 @@ input[type="checkbox"] {
   width: @input-height-large;
   height: @input-height-large;
   line-height: @input-height-large;
+  font-size: @form-feedback-large;
 }
 .input-sm + .form-control-feedback,
 .input-group-sm + .form-control-feedback,
@@ -434,17 +436,18 @@ input[type="checkbox"] {
   width: @input-height-small;
   height: @input-height-small;
   line-height: @input-height-small;
+  font-size: @form-feedback-small;
 }
 
 // Feedback states
 .has-success {
-  .form-control-validation(@state-success-text; @state-success-text; @state-success-bg);
+  .form-control-validation(@brand-success; @brand-success; @state-success-bg);
 }
 .has-warning {
-  .form-control-validation(@state-warning-text; @state-warning-text; @state-warning-bg);
+  .form-control-validation(@brand-warning; @brand-warning; @state-warning-bg);
 }
 .has-error {
-  .form-control-validation(@state-danger-text; @state-danger-text; @state-danger-bg);
+  .form-control-validation(@brand-danger; @brand-danger; @state-danger-bg);
 }
 
 // Reposition feedback icon if input has visible label above
