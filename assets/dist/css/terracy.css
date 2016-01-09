@@ -373,14 +373,6 @@ th {
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-  /* Enable Ligatures ================ */
-  letter-spacing: 0;
-  -webkit-font-feature-settings: "liga";
-  -moz-font-feature-settings: "liga=1";
-  -moz-font-feature-settings: "liga";
-  -ms-font-feature-settings: "liga" 1;
-  -o-font-feature-settings: "liga";
-  font-feature-settings: "liga";
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -4435,19 +4427,16 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   line-height: 1;
   color: #555555;
   text-align: center;
-  background-color: #eeeeee;
-  border: 1px solid #555555;
-  border-radius: 2px;
+  background-color: transparent;
+  border-bottom: 1px solid #555555;
 }
 .input-group-addon.input-sm {
   padding: 6px 15px;
   font-size: 12px;
-  border-radius: 2px;
 }
 .input-group-addon.input-lg {
   padding: 10px 20px;
   font-size: 18px;
-  border-radius: 2px;
 }
 .input-group-addon input[type="radio"],
 .input-group-addon input[type="checkbox"] {
@@ -4483,9 +4472,15 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   position: relative;
   font-size: 0;
   white-space: nowrap;
+  padding-top: 1px;
 }
 .input-group-btn > .btn {
   position: relative;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 1px solid #555555;
+  background-color: transparent;
 }
 .input-group-btn > .btn + .btn {
   margin-left: -1px;
@@ -4493,7 +4488,52 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .input-group-btn > .btn:hover,
 .input-group-btn > .btn:focus,
 .input-group-btn > .btn:active {
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
   z-index: 2;
+}
+.input-group-btn > .btn.btn-default:hover {
+  color: #50792c;
+}
+.input-group-btn > .btn.btn-default:focus,
+.input-group-btn > .btn.btn-default:active {
+  color: #50792c;
+}
+.input-group-btn > .btn.btn-primary:hover {
+  color: #50792c;
+}
+.input-group-btn > .btn.btn-primary:focus,
+.input-group-btn > .btn.btn-primary:active {
+  color: #50792c;
+}
+.input-group-btn > .btn.btn-success:hover {
+  color: #50792c;
+}
+.input-group-btn > .btn.btn-success:focus,
+.input-group-btn > .btn.btn-success:active {
+  color: #50792c;
+}
+.input-group-btn > .btn.btn-info:hover {
+  color: #135e3d;
+}
+.input-group-btn > .btn.btn-info:focus,
+.input-group-btn > .btn.btn-info:active {
+  color: #135e3d;
+}
+.input-group-btn > .btn.btn-warning:hover {
+  color: #bf7d00;
+}
+.input-group-btn > .btn.btn-warning:focus,
+.input-group-btn > .btn.btn-warning:active {
+  color: #bf7d00;
+}
+.input-group-btn > .btn.btn-danger:hover {
+  color: #aa2502;
+}
+.input-group-btn > .btn.btn-danger:focus,
+.input-group-btn > .btn.btn-danger:active {
+  color: #aa2502;
 }
 .input-group-btn:first-child > .btn,
 .input-group-btn:first-child > .btn-group {
