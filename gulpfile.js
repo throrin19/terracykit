@@ -33,5 +33,8 @@ gulp.task('less-min', function () {
 });
 
 gulp.task('build', [ 'less', 'less-min' ], function () {
+});
+
+gulp.task('watch', [ 'less', 'less-min' ], function () {
     gulp.watch('./less/**/*.less', [ 'less', 'less-min' ]);
 });
