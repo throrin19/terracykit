@@ -3122,7 +3122,7 @@ fieldset[disabled] .checkbox label {
 }
 .input-sm {
   height: 32px;
-  padding: 6px 15px;
+  padding: 3px 5px;
   font-size: 12px;
   line-height: 1.5;
   border-radius: 2px;
@@ -3137,10 +3137,9 @@ select[multiple].input-sm {
 }
 .form-group-sm .form-control {
   height: 32px;
-  padding: 6px 15px;
+  padding: 3px 5px;
   font-size: 12px;
   line-height: 1.5;
-  border-radius: 2px;
 }
 .form-group-sm select.form-control {
   height: 32px;
@@ -3153,13 +3152,13 @@ select[multiple].input-sm {
 .form-group-sm .form-control-static {
   height: 32px;
   min-height: 32px;
-  padding: 7px 15px;
+  padding: 4px 5px;
   font-size: 12px;
   line-height: 1.5;
 }
 .input-lg {
   height: 46px;
-  padding: 10px 20px;
+  padding: 3px 5px;
   font-size: 18px;
   line-height: 1.3333333;
   border-radius: 2px;
@@ -3174,10 +3173,9 @@ select[multiple].input-lg {
 }
 .form-group-lg .form-control {
   height: 46px;
-  padding: 10px 20px;
+  padding: 3px 5px;
   font-size: 18px;
   line-height: 1.3333333;
-  border-radius: 2px;
 }
 .form-group-lg select.form-control {
   height: 46px;
@@ -3190,7 +3188,7 @@ select[multiple].input-lg {
 .form-group-lg .form-control-static {
   height: 46px;
   min-height: 38px;
-  padding: 11px 20px;
+  padding: 4px 5px;
   font-size: 18px;
   line-height: 1.3333333;
 }
@@ -3211,6 +3209,7 @@ select[multiple].input-lg {
   line-height: 38px;
   text-align: center;
   pointer-events: none;
+  font-size: 20px;
 }
 .input-lg + .form-control-feedback,
 .input-group-lg + .form-control-feedback,
@@ -3218,6 +3217,7 @@ select[multiple].input-lg {
   width: 46px;
   height: 46px;
   line-height: 46px;
+  font-size: 25px;
 }
 .input-sm + .form-control-feedback,
 .input-group-sm + .form-control-feedback,
@@ -3225,6 +3225,7 @@ select[multiple].input-lg {
   width: 32px;
   height: 32px;
   line-height: 32px;
+  font-size: 14px;
 }
 .has-success .help-block,
 .has-success .control-label,
@@ -3236,21 +3237,21 @@ select[multiple].input-lg {
 .has-success.checkbox label,
 .has-success.radio-inline label,
 .has-success.checkbox-inline label {
-  color: #526144;
+  color: #699f39;
 }
 .has-success .form-control {
-  border-color: #526144;
+  border-color: #699f39;
 }
 .has-success .form-control:focus {
-  border-color: #38432f;
+  border-color: #50792c;
 }
 .has-success .input-group-addon {
-  color: #526144;
-  border-color: #526144;
+  color: #699f39;
+  border-color: #699f39;
   background-color: #ebf3e4;
 }
 .has-success .form-control-feedback {
-  color: #526144;
+  color: #699f39;
 }
 .has-warning .help-block,
 .has-warning .control-label,
@@ -3262,21 +3263,21 @@ select[multiple].input-lg {
 .has-warning.checkbox label,
 .has-warning.radio-inline label,
 .has-warning.checkbox-inline label {
-  color: #a2741d;
+  color: #F29E00;
 }
 .has-warning .form-control {
-  border-color: #a2741d;
+  border-color: #F29E00;
 }
 .has-warning .form-control:focus {
-  border-color: #775515;
+  border-color: #bf7d00;
 }
 .has-warning .input-group-addon {
-  color: #a2741d;
-  border-color: #a2741d;
+  color: #F29E00;
+  border-color: #F29E00;
   background-color: #fce8c2;
 }
 .has-warning .form-control-feedback {
-  color: #a2741d;
+  color: #F29E00;
 }
 .has-error .help-block,
 .has-error .control-label,
@@ -3288,21 +3289,21 @@ select[multiple].input-lg {
 .has-error.checkbox label,
 .has-error.radio-inline label,
 .has-error.checkbox-inline label {
-  color: #91341b;
+  color: #DD3002;
 }
 .has-error .form-control {
-  border-color: #91341b;
+  border-color: #DD3002;
 }
 .has-error .form-control:focus {
-  border-color: #662513;
+  border-color: #aa2502;
 }
 .has-error .input-group-addon {
-  color: #91341b;
-  border-color: #91341b;
+  color: #DD3002;
+  border-color: #DD3002;
   background-color: #fde7e1;
 }
 .has-error .form-control-feedback {
-  color: #91341b;
+  color: #DD3002;
 }
 .has-feedback label ~ .form-control-feedback {
   top: 25px;
@@ -4369,7 +4370,7 @@ tbody.collapse.in {
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .btn {
   height: 46px;
-  padding: 10px 20px;
+  padding: 3px 5px;
   font-size: 18px;
   line-height: 1.3333333;
   border-radius: 2px;
@@ -4392,7 +4393,7 @@ select[multiple].input-group-lg > .input-group-btn > .btn {
 .input-group-sm > .input-group-addon,
 .input-group-sm > .input-group-btn > .btn {
   height: 32px;
-  padding: 6px 15px;
+  padding: 3px 5px;
   font-size: 12px;
   line-height: 1.5;
   border-radius: 2px;
