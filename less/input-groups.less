@@ -81,20 +81,20 @@
   line-height: 1;
   color: @input-color;
   text-align: center;
-  background-color: @input-group-addon-bg;
-  border: 1px solid @input-group-addon-border-color;
-  border-radius: @input-border-radius;
+  background-color: transparent;
+  border-bottom: 1px solid @input-group-addon-border-color;
+  //border-radius: @input-border-radius;
 
   // Sizing
   &.input-sm {
     padding: @padding-small-vertical @padding-small-horizontal;
     font-size: @font-size-small;
-    border-radius: @input-border-radius-small;
+    //border-radius: @input-border-radius-small;
   }
   &.input-lg {
     padding: @padding-large-vertical @padding-large-horizontal;
     font-size: @font-size-large;
-    border-radius: @input-border-radius-large;
+    //border-radius: @input-border-radius-large;
   }
 
   // Nuke default margins from checkboxes and radios to vertically center within.
@@ -138,11 +138,17 @@
   // `font-size` in combination with `inline-block` on buttons.
   font-size: 0;
   white-space: nowrap;
+  padding-top : 1px;
 
   // Negative margin for spacing, position for bringing hovered/focused/actived
   // element above the siblings.
   > .btn {
     position: relative;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 1px solid @input-border;
+    background-color: transparent;
     + .btn {
       margin-left: -1px;
     }
@@ -150,7 +156,28 @@
     &:hover,
     &:focus,
     &:active {
+      background-color: transparent;
+      .box-shadow(none);
       z-index: 2;
+    }
+
+    &.btn-default {
+      .button-input-group-variant(@brand-primary);
+    }
+    &.btn-primary {
+      .button-input-group-variant(@brand-primary);
+    }
+    &.btn-success {
+      .button-input-group-variant(@brand-primary);
+    }
+    &.btn-info {
+      .button-input-group-variant(@brand-info);
+    }
+    &.btn-warning {
+      .button-input-group-variant(@brand-warning);
+    }
+    &.btn-danger {
+      .button-input-group-variant(@brand-danger);
     }
   }
 

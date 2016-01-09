@@ -63,3 +63,12 @@
   line-height: @line-height;
   border-radius: @border-radius;
 }
+
+.button-input-group-variant(@color) {
+  &:hover {
+    color : darken(@color, 10%);
+  }
+  &:focus, &:active {
+    color : darken(@color, 10%);
+  }
+}
