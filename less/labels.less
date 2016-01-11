@@ -6,7 +6,7 @@
   display: inline;
   padding: .2em .6em .3em;
   font-size: 75%;
-  font-weight: bold;
+  font-weight: normal;
   line-height: 1;
   color: @label-color;
   text-align: center;
@@ -34,6 +34,12 @@
     position: relative;
     top: -1px;
   }
+
+  &.label-outline {
+    background-color: @white;
+    border : 1px solid @input-border;
+    color : @input-border;
+  }
 }
 
 // Colors
@@ -45,20 +51,40 @@
 
 .label-primary {
   .label-variant(@label-primary-bg);
+  &.label-outline {
+    background-color: @white;
+    border-color: @label-primary-bg;
+  }
 }
 
 .label-success {
   .label-variant(@label-success-bg);
+  &.label-outline {
+    background-color: @white;
+    border-color: @label-success-bg;
+  }
 }
 
 .label-info {
   .label-variant(@label-info-bg);
+  &.label-outline {
+    background-color: @white;
+    border-color: @label-info-bg;
+  }
 }
 
 .label-warning {
   .label-variant(@label-warning-bg);
+  &.label-outline {
+    background-color: @white;
+    border-color: @label-warning-bg;
+  }
 }
 
 .label-danger {
   .label-variant(@label-danger-bg);
+  &.label-outline {
+    background-color: @white;
+    border-color: @label-danger-bg;
+  }
 }

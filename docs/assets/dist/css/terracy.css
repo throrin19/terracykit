@@ -5418,7 +5418,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   display: inline;
   padding: .2em .6em .3em;
   font-size: 75%;
-  font-weight: bold;
+  font-weight: normal;
   line-height: 1;
   color: #fff;
   text-align: center;
@@ -5439,6 +5439,11 @@ a.label:focus {
   position: relative;
   top: -1px;
 }
+.label.label-outline {
+  background-color: #fff;
+  border: 1px solid #555555;
+  color: #555555;
+}
 .label-default {
   background-color: #777777;
 }
@@ -5453,12 +5458,20 @@ a.label:focus {
 .label-primary[href]:focus {
   background-color: #50792c;
 }
+.label-primary.label-outline {
+  background-color: #fff;
+  border-color: #699f39;
+}
 .label-success {
   background-color: #699f39;
 }
 .label-success[href]:hover,
 .label-success[href]:focus {
   background-color: #50792c;
+}
+.label-success.label-outline {
+  background-color: #fff;
+  border-color: #699f39;
 }
 .label-info {
   background-color: #1b8958;
@@ -5467,6 +5480,10 @@ a.label:focus {
 .label-info[href]:focus {
   background-color: #135e3d;
 }
+.label-info.label-outline {
+  background-color: #fff;
+  border-color: #1b8958;
+}
 .label-warning {
   background-color: #F29E00;
 }
@@ -5474,12 +5491,20 @@ a.label:focus {
 .label-warning[href]:focus {
   background-color: #bf7d00;
 }
+.label-warning.label-outline {
+  background-color: #fff;
+  border-color: #F29E00;
+}
 .label-danger {
   background-color: #DD3002;
 }
 .label-danger[href]:hover,
 .label-danger[href]:focus {
   background-color: #aa2502;
+}
+.label-danger.label-outline {
+  background-color: #fff;
+  border-color: #DD3002;
 }
 .badge {
   display: inline-block;
