@@ -4609,9 +4609,29 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-tabs > li:last-of-type > a {
   border-right-color: transparent;
 }
+.nav-tabs > li:last-of-type > a:hover {
+  border-color: #eeeeee #eeeeee #ddd;
+}
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
+  color: #555555;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-bottom-color: transparent;
+  cursor: default;
+}
+.nav-tabs.nav-inverse > li > a {
+  background-color: #333333;
+  border-color: transparent #555555 #555555 transparent;
+}
+.nav-tabs.nav-inverse > li > a:hover {
+  background-color: #777777;
+  border-color: #555555;
+}
+.nav-tabs.nav-inverse > li.active > a,
+.nav-tabs.nav-inverse > li.active > a:hover,
+.nav-tabs.nav-inverse > li.active > a:focus {
   color: #555555;
   background-color: #fff;
   border: 1px solid #ddd;
