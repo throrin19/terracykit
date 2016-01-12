@@ -4556,7 +4556,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav > li > a {
   position: relative;
   display: block;
-  padding: 10px 15px;
+  padding: 12px 35px;
+  font-weight: bolder;
 }
 .nav > li > a:hover,
 .nav > li > a:focus {
@@ -4596,13 +4597,17 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-bottom: -1px;
 }
 .nav-tabs > li > a {
-  margin-right: 2px;
   line-height: 1.42857143;
-  border: 1px solid transparent;
-  border-radius: 2px 2px 0 0;
+  color: #919191;
+  border: 1px solid;
+  border-color: transparent #eeeeee #ddd transparent;
+  background-color: #f9f9f9;
 }
 .nav-tabs > li > a:hover {
   border-color: #eeeeee #eeeeee #ddd;
+}
+.nav-tabs > li:last-of-type > a {
+  border-right-color: transparent;
 }
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
@@ -4639,7 +4644,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .nav-tabs.nav-justified > li > a {
   margin-right: 0;
-  border-radius: 2px;
 }
 .nav-tabs.nav-justified > .active > a,
 .nav-tabs.nav-justified > .active > a:hover,
@@ -4649,7 +4653,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 @media (min-width: 768px) {
   .nav-tabs.nav-justified > li > a {
     border-bottom: 1px solid #ddd;
-    border-radius: 2px 2px 0 0;
   }
   .nav-tabs.nav-justified > .active > a,
   .nav-tabs.nav-justified > .active > a:hover,
@@ -4659,9 +4662,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .nav-pills > li {
   float: left;
-}
-.nav-pills > li > a {
-  border-radius: 2px;
 }
 .nav-pills > li + li {
   margin-left: 2px;
@@ -4707,7 +4707,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .nav-tabs-justified > li > a {
   margin-right: 0;
-  border-radius: 2px;
 }
 .nav-tabs-justified > .active > a,
 .nav-tabs-justified > .active > a:hover,
@@ -4717,7 +4716,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 @media (min-width: 768px) {
   .nav-tabs-justified > li > a {
     border-bottom: 1px solid #ddd;
-    border-radius: 2px 2px 0 0;
   }
   .nav-tabs-justified > .active > a,
   .nav-tabs-justified > .active > a:hover,
