@@ -16,10 +16,6 @@
 
   // Prevent floats from breaking the navbar
   &:extend(.clearfix all);
-
-  @media (min-width: @grid-float-breakpoint) {
-    border-radius: @navbar-border-radius;
-  }
 }
 
 
@@ -199,7 +195,7 @@
   background-color: transparent;
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
   border: 1px solid transparent;
-  border-radius: @border-radius-base;
+  //border-radius: @border-radius-base;
 
   // We remove the `outline` here, but later compensate by attaching `:hover`
   // styles to `:focus`.
@@ -212,7 +208,7 @@
     display: block;
     width: 22px;
     height: 2px;
-    border-radius: 1px;
+    //border-radius: 1px;
   }
   .icon-bar + .icon-bar {
     margin-top: 4px;
@@ -331,7 +327,7 @@
 // Menu position and menu caret support for dropups via extra dropup class
 .navbar-fixed-bottom .navbar-nav > li > .dropdown-menu {
   margin-bottom: 0;
-  .border-top-radius(@navbar-border-radius);
+  //.border-top-radius(@navbar-border-radius);
   .border-bottom-radius(0);
 }
 
@@ -418,7 +414,7 @@
       &:focus {
         color: @navbar-default-link-hover-color;
         background-color: transparent;
-        border-bottom: 4px solid @brand-primary;
+        border-bottom: 4px solid @navbar-default-selected;
         padding-bottom: @navbar-padding-vertical - 4px;
       }
     }
@@ -428,7 +424,7 @@
       &:focus {
         color: @navbar-default-link-active-color;
         background-color: transparent;
-        border-bottom: 4px solid @brand-primary;
+        border-bottom: 4px solid @navbar-default-selected;
         padding-bottom: @navbar-padding-vertical - 4px;
       }
     }
@@ -551,11 +547,14 @@
   .navbar-nav {
     > li > a {
       color: @navbar-inverse-link-color;
+      padding: @navbar-padding-vertical 12px;
 
       &:hover,
       &:focus {
         color: @navbar-inverse-link-hover-color;
         background-color: @navbar-inverse-link-hover-bg;
+        padding-bottom: @navbar-padding-vertical - 4px;
+        border-bottom: 4px solid @navbar-inverse-selected;
       }
     }
     > .active > a {
@@ -564,6 +563,8 @@
       &:focus {
         color: @navbar-inverse-link-active-color;
         background-color: @navbar-inverse-link-active-bg;
+        padding-bottom: @navbar-padding-vertical - 4px;
+        border-bottom: 4px solid @navbar-inverse-selected;
       }
     }
     > .disabled > a {
