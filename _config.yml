@@ -1,7 +1,7 @@
 # name of the software
 name: Terracy Bootstrap
 # current version of the software
-version: 0.0.1
+version: 0.1.0
 # url of the download button
 downloadUrl: https://github.com/throrin19/terracykit
 # licence of the software
