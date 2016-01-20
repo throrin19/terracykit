@@ -1,0 +1,132 @@
+.icons-section small {
+    font-size: .66666667em;
+}
+.icons-section a {
+    color: #e74c3c;
+    text-decoration: none;
+}
+.icons-section a:hover, .icons-section a:focus {
+    box-shadow: 0 1px #e74c3c;
+}
+.icons-section .bshadow0, .icons-section input {
+    box-shadow: inset 0 -2px #e7e7e7;
+}
+.icons-section input:hover {
+    box-shadow: inset 0 -2px #ccc;
+}
+.icons-section input, .icons-section fieldset {
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.icons-section input {
+    color: inherit;
+    line-height: 1.5;
+    height: 1.5em;
+    padding: .25em 0;
+}
+.icons-section input:focus {
+    outline: none;
+    box-shadow: inset 0 -2px #449fdb;
+}
+.icons-section .glyph {
+    font-size: 16px;
+    width: 15em;
+    padding-bottom: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    float: left;
+    overflow: hidden;
+}
+.icons-section .liga {
+    width: 80%;
+    width: calc(100% - 2.5em);
+}
+.icons-section .talign-right {
+    text-align: right;
+}
+.icons-section .talign-center {
+    text-align: center;
+}
+.icons-section .bgc1 {
+    background: #f1f1f1;
+}
+.icons-section .fgc1 {
+    color: #999;
+}
+.icons-section .fgc0 {
+    color: #000;
+}
+.icons-section p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.icons-section .mvm {
+    margin-top: .75em;
+    margin-bottom: .75em;
+}
+.icons-section .mtn {
+    margin-top: 0;
+}
+.icons-section .mtl, .icons-section .mal {
+    margin-top: 1.5em;
+}
+.icons-section .mbl, .icons-section .mal {
+    margin-bottom: 1.5em;
+}
+.icons-section .mal, .icons-section .mhl {
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+}
+.icons-section .mhmm {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.icons-section .mls {
+    margin-left: .25em;
+}
+.icons-section .ptl {
+    padding-top: 1.5em;
+}
+.icons-section .pbs, .pvs {
+    padding-bottom: .25em;
+}
+.icons-section .pvs, .pts {
+    padding-top: .25em;
+}
+.icons-section .unit {
+    float: left;
+}
+.icons-section .unitRight {
+    float: right;
+}
+.icons-section .size1of2 {
+    width: 50%;
+}
+.icons-section .size1of1 {
+    width: 100%;
+}
+.icons-section .clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+}
+.icons-section .clearfix:after {
+    clear: both;
+}
+.icons-section .hidden-true {
+    display: none;
+}
+.icons-section .textbox0 {
+    width: 3em;
+    background: #f1f1f1;
+    padding: .25em .5em;
+    line-height: 1.5;
+    height: 1.5em;
+}
+.icons-section .fs0 {
+    font-size: 16px;
+}
+.icons-section .fs1 {
+    font-size: 24px;
+}

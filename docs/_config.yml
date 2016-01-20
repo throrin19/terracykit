@@ -1,0 +1,57 @@
+# name of the software
+name: Terracy Bootstrap
+# current version of the software
+version: 0.1.0
+# url of the download button
+downloadUrl: https://github.com/throrin19/terracykit
+# licence of the software
+license: Apache License 2.0
+licenseUrl: http://opensource.org/licenses/Apache-2.0
+
+# list of additional links on the right of the top menu
+headerLinks:
+  - title: Terracy Bootstrap
+    url: https://github.com/throrin19/terracykit
+
+# list if additional links on the footer
+footerLinks:
+  - title: GitHub
+    url: https://github.com/throrin19/terracykit
+  - title: Issues
+    url: https://github.com/throrin19/terracykit/issues?state=open
+
+# header
+header:
+  color1: "#699f39"
+  color2: "#1b8958"
+  trianglify: true
+
+# google analytics
+analytics:
+  account:
+  domain:
+
+# github buttons
+githubButton:
+  user: throrin19
+  repo: terracykit
+
+# twitter buttons
+twitter:
+  enabled: true
+  via:
+  hash:
+  account:
+
+# facebook buttons
+facebook:
+  enabled: true
+  profileUrl:
+
+
+exclude: ['README.md', 'LICENSE', 'bower.json', 'Gemfile.lock', 'Gemfile']
+
+gems:
+  - jemoji
+  - jekyll-redirect-from
+  - jekyll-sitemap

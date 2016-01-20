@@ -1,0 +1,30 @@
+.label {
+  display: inline-block;
+  .border-radius(2px);
+  background-color: @white;
+  border: 1px solid @grey-border;
+  color: @text-color;
+  padding: .2em .6em .3em;
+  font-size: 75%;
+  line-height: 1;
+
+  // colors
+  .labels-colors(@index, @colors) when (@index > 0) {
+    .labels-colors(@index - 1, @colors);
+    @color  : e(extract(@colors, @index));
+    @border : "@{color}-border";
+
+    &.label-@{color} {
+      background-color: @@color;
+      border-color: @@border;
+      color: contrast(@@color, @white, @black, 80%);
+
+      &.label-outline {
+        background-color: @white;
+        border-color: @@border;
+        color : @text-color;
+      }
+    }
+  }
+  .labels-colors(length(@colors), @colors);
+}
