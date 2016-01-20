@@ -37,3 +37,10 @@
   display: block;
   border: 0;
 }
+
+.bs-example-tooltip .tooltip {
+  position: relative;
+  display: inline-block;
+  margin: 10px 20px;
+  opacity: 1;
+}

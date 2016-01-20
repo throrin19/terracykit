@@ -1,4 +1,4 @@
-<div class="bs-docs-section">
+<div class="bs-docs-section bs-section-popover">
   <h1 id="popovers" class="page-header">Popovers <small>popover.js</small></h1>
 
   <p>Add small overlays of content, like those on the iPad, to any element for housing secondary information.</p>
@@ -307,3 +307,8 @@ $('#myPopover').on('hidden.bs.popover', function () {
 })
 {% endhighlight %}
 </div>
+<script>
+  $(function () {
+    $('.bs-section-popover [data-toggle="popover"]').popover();
+  });
+</script>
