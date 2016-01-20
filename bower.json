@@ -1,0 +1,27 @@
+{
+  "name": "terracykit",
+  "description": "Terracy Kit Bootstrap",
+  "main": "",
+  "authors": [
+    "Benjamin Besse"
+  ],
+  "license": "Apache-1.0",
+  "keywords": [
+    "bootstrap",
+    "ui",
+    "terracy",
+    "kit",
+    "ux",
+    "riot"
+  ],
+  "homepage": "http://throrin19.github.io/terracykit/",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "version": "0.1.0"
+}
